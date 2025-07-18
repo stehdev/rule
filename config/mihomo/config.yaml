@@ -298,14 +298,9 @@ rule-providers:
       <<: *class,
       url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list",
     }
-  ai_1:
+  ai:
     {
       <<: *domain,
-      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs",
-    }
-  ai_2:
-    {
-      <<: *class,
       url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs",
     }
   youtube_domain:
