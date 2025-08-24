@@ -308,6 +308,7 @@ rules:
   - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,gfw_domain,🚀 默认代理
   - RULE-SET,geolocation-!cn,🚀 默认代理
+  - RULE-SET,steam_cn,🎯 直连
   - RULE-SET,cn_domain,🎯 直连
   - RULE-SET,cn_ip,🎯 直连
   - MATCH,🐟 漏网之鱼
@@ -328,6 +329,11 @@ rule-providers:
     {
       <<: *class,
       url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list",
+    }
+  steam_cn:
+    {
+      <<: *class,
+      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.list",
     }
   ai:
     {
