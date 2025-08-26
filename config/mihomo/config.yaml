@@ -333,8 +333,8 @@ rule-providers:
     }
   steam_cn:
     {
-      <<: *class,
-      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.list",
+      <<: *domain,
+      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs",
     }
   ai:
     {
