@@ -304,11 +304,12 @@ proxy-groups:
 rules:
   - RULE-SET,ai,🤖 AI
   - RULE-SET,private_domain,🎯 直连
-  - RULE-SET,apple_domain,🍎 Apple
+  - RULE-SET,private_ip,🎯 直连
+  - RULE-SET,apple_cn,🍎 Apple
+  - RULE-SET,apple,🍎 Apple
   - RULE-SET,steam_cn,🎯 直连
   - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,gfw_domain,🚀 默认代理
-  - RULE-SET,geolocation-!cn,🚀 默认代理
   - RULE-SET,cn_domain,🎯 直连
   - RULE-SET,cn_ip,🎯 直连
   - GEOIP,cn,🎯 直连
@@ -325,6 +326,11 @@ rule-providers:
     {
       <<: *domain,
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs",
+    }
+  private_ip:
+    {
+      <<: *ip,
+      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs",
     }
   proxylite:
     {
@@ -381,10 +387,15 @@ rule-providers:
       <<: *domain,
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs",
     }
-  apple_domain:
+  apple_cn:
     {
       <<: *domain,
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs",
+    }
+  apple:
+    {
+      <<: *domain,
+      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs",
     }
   speedtest_domain:
     {
