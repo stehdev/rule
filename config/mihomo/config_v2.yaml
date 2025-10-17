@@ -359,7 +359,7 @@ rules:
   - DOMAIN-SUFFIX,bestemby.com,🎯 直连,no-resolve
   - RULE-SET,Lan,🎯 直连,no-resolve
   - RULE-SET,ai,🤖 AI
-  - RULE-SET,Apple_Proxy,🍎 Apple
+  - RULE-SET,Apple_Proxy,🚀 默认代理
   - RULE-SET,Apple,🍎 Apple
   - RULE-SET,steam_cn,🎯 直连
   - RULE-SET,cn_domain,🎯 直连,no-resolve
