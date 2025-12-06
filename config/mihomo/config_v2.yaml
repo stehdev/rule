@@ -357,8 +357,10 @@ proxy-groups:
 # 规则（沿用旧配置，并加入 Lan 处理）
 rules:
   - DOMAIN-SUFFIX,bestemby.com,🎯 直连,no-resolve
+  - DST-PORT,22,🎯 直连,no-resolve
   - RULE-SET,Lan,🎯 直连,no-resolve
   - RULE-SET,ai,🤖 AI
+  - DOMAIN-SUFFIX,podcasts.apple.com,🚀 默认代理
   - RULE-SET,Apple_Proxy,🚀 默认代理
   - RULE-SET,Apple,🍎 Apple
   - RULE-SET,steam_cn,🎯 直连
