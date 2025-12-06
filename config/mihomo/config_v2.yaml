@@ -360,6 +360,7 @@ rules:
   - DST-PORT,22,🎯 直连,no-resolve
   - RULE-SET,Lan,🎯 直连,no-resolve
   - RULE-SET,ai,🤖 AI
+  - RULE-SET,linkedin,🚀 默认代理
   - DOMAIN-SUFFIX,podcasts.apple.com,🚀 默认代理
   - RULE-SET,Apple_Proxy,🚀 默认代理
   - RULE-SET,Apple,🍎 Apple
@@ -402,6 +403,11 @@ rule-providers:
     {
       <<: *domain,
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs",
+    }
+  linkedin:
+    {
+      <<: *domain,
+      url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/linkedin.mrs",
     }
   Lan:
     {
