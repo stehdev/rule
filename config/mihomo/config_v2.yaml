@@ -182,6 +182,21 @@ proxy-groups:
         ],
     }
   - {
+      name: Cambly,
+      type: select,
+      proxies:
+        [
+          🚀 默认代理,
+          🇭🇰 香港节点,
+          🇯🇵 日本节点,
+          🇸🇬 狮城节点,
+          🇺🇲 美国节点,
+          🇹🇼 台湾节点,
+          🌐 全部节点,
+          直连,
+        ],
+    }
+  - {
       name: 🤖 AI,
       type: select,
       proxies:
@@ -359,6 +374,7 @@ rules:
   - DOMAIN-SUFFIX,bestemby.com,🎯 直连,no-resolve
   - DST-PORT,22,🎯 直连,no-resolve
   - RULE-SET,Lan,🎯 直连,no-resolve
+  - DOMAIN-SUFFIX,cambly.com,Cambly
   - RULE-SET,ai,🤖 AI
   - RULE-SET,linkedin,🚀 默认代理
   - DOMAIN-SUFFIX,podcasts.apple.com,🚀 默认代理
